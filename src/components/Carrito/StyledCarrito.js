@@ -10,7 +10,6 @@ export const StyledCarritoContainer = styled.div`
   cursor: pointer;
   color: #fff;
   @media (max-width: 768px) {
-    display: none;
   }
 `;
 

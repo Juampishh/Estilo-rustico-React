@@ -45,9 +45,6 @@ export const StyledSocialContainer = styled.div`
     h1 {
       font-size: 1.5rem;
     }
-    li {
-      display: none;
-    }
   }
 `;
 
@@ -55,6 +52,4 @@ export const StyledCartContainer = styled.div`
   display: flex;
   width: 50%;
   justify-content: flex-end;
-  @media (max-width: 768px) {
-  }
 `;

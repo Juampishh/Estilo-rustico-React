@@ -8,7 +8,7 @@ const productos = [
         url: "./assets_catalogo/IMG/Mayken/2.png",
       },
     ],
-    imagen: "./src/assets/img/img-product/item 1.jpg",
+    imagen: "/img/img-product/item 1.jpg",
     info: {
       tipo: "Revestimiento de pared de Hormigon",
       Material: "Hormigón pigmentado con o sin tratamiento simil madera",
@@ -30,7 +30,7 @@ const productos = [
     id: "item 2",
     titulo: "Revestimiento",
     recomend: "Recomendado",
-    imagen: "./src/assets/img/img-product/item 2.jpeg",
+    imagen: "/img/img-product/item 2.jpeg",
     info: {
       tipo: "Revestimiento de pared o piso",
       Material: "Hormigón pigmentado",
@@ -52,7 +52,7 @@ const productos = [
     id: "item 43",
     titulo: "Revestimiento",
     recomend: "Recomendado",
-    imagen: "./src/assets/img/img-product/item 43.jpeg",
+    imagen: "/img/img-product/item 43.jpeg",
     info: {
       tipo: "Revestimiento de pared o piso",
       Material: "Hormigón pigmentado",
@@ -74,7 +74,7 @@ const productos = [
     id: "item 3",
     titulo: "Revestimiento",
     recomend: "Recomendado",
-    imagen: "./src/assets/img/img-product/item 3.jpg",
+    imagen: "/img/img-product/item 3.jpg",
     info: {
       tipo: "Revestimiento de pared",
       Material: "Hormigón pigmentado",
@@ -95,7 +95,7 @@ const productos = [
   {
     id: "item 4",
     titulo: "Revestimiento",
-    imagen: "./src/assets/img/img-product/item 4.jpg",
+    imagen: "/img/img-product/item 4.jpg",
     info: {
       tipo: "Revestimiento de pared",
       Material: "Hormigón pigmentado",
@@ -116,7 +116,7 @@ const productos = [
   {
     id: "item 5",
     titulo: "Revestimiento",
-    imagen: "./src/assets/img/img-product/item 5.jpg",
+    imagen: "/img/img-product/item 5.jpg",
     info: {
       tipo: "Revestimiento de pared",
       Material: "Hormigón pigmentado",
@@ -137,7 +137,7 @@ const productos = [
   {
     id: "item 6",
     titulo: "Revestimiento",
-    imagen: "./src/assets/img/img-product/item 6.jpg",
+    imagen: "/img/img-product/item 6.jpg",
     info: {
       tipo: "Revestimiento de pared",
       Material: "Hormigón pigmentado",
@@ -159,7 +159,7 @@ const productos = [
     id: "item 7",
     titulo: "Revestimiento",
     recomend: "Recomendado",
-    imagen: "./src/assets/img/img-product/item 7.jpg",
+    imagen: "/img/img-product/item 7.jpg",
     info: {
       tipo: "Revestimiento de pared",
       Material: "Hormigón pigmentado",
@@ -180,7 +180,7 @@ const productos = [
   {
     id: "item 8",
     titulo: "Revestimiento",
-    imagen: "./src/assets/img/img-product/item 8.jpg",
+    imagen: "/img/img-product/item 8.jpg",
     info: {
       tipo: "Revestimiento de pared",
       Material: "Hormigón pigmentado",
@@ -201,7 +201,7 @@ const productos = [
   {
     id: "item 9",
     titulo: "Revestimiento",
-    imagen: "./src/assets/img/img-product/item 9.jpg",
+    imagen: "/img/img-product/item 9.jpg",
     info: {
       tipo: "Revestimiento de pared",
       Material: "Hormigón pigmentado",
@@ -222,7 +222,7 @@ const productos = [
   {
     id: "item 10",
     titulo: "Revestimiento",
-    imagen: "./src/assets/img/img-product/item 10.jpg",
+    imagen: "/img/img-product/item 10.jpg",
     info: {
       tipo: "Revestimiento de pared",
       Material: "Hormigón pigmentado",
@@ -243,7 +243,7 @@ const productos = [
   {
     id: "item 11",
     titulo: "Revestimiento",
-    imagen: "./src/assets/img/img-product/item 11.jpg",
+    imagen: "/img/img-product/item 11.jpg",
     info: {
       tipo: "Revestimiento de pared",
       Material: "Hormigón pigmentado",
@@ -264,7 +264,7 @@ const productos = [
   {
     id: "item 12",
     titulo: "Revestimiento",
-    imagen: "./src/assets/img/img-product/item 12.jpg",
+    imagen: "/img/img-product/item 12.jpg",
     info: {
       tipo: "Revestimiento de pared",
       Material: "Hormigón pigmentado",
@@ -285,7 +285,7 @@ const productos = [
   {
     id: "item 13",
     titulo: "Revestimiento",
-    imagen: "./src/assets/img/img-product/item 13.jpg",
+    imagen: "/img/img-product/item 13.jpg",
     info: {
       tipo: "Revestimiento de pared",
       Material: "Hormigón pigmentado",
@@ -306,7 +306,7 @@ const productos = [
   {
     id: "item 14",
     titulo: "Revestimiento",
-    imagen: "./src/assets/img/img-product/item 14.jpg",
+    imagen: "/img/img-product/item 14.jpg",
     info: {
       tipo: "Revestimiento de pared",
       Material: "Hormigón pigmentado ",
@@ -327,7 +327,7 @@ const productos = [
   {
     id: "item 15",
     titulo: "Revestimiento",
-    imagen: "./src/assets/img/img-product/item 15.jpg",
+    imagen: "/img/img-product/item 15.jpg",
     info: {
       tipo: "Revestimiento de pared",
       Material: "Hormigón pigmentado",
@@ -348,7 +348,7 @@ const productos = [
   {
     id: "item 16",
     titulo: "Revestimiento",
-    imagen: "./src/assets/img/img-product/item 16.jpg",
+    imagen: "/img/img-product/item 16.jpg",
     recomend: "Recomendado",
     info: {
       tipo: "Revestimiento de piso",
@@ -370,7 +370,7 @@ const productos = [
   {
     id: "item 44",
     titulo: "Revestimiento",
-    imagen: "./src/assets/img/img-product/item 44.jpeg",
+    imagen: "/img/img-product/item 44.jpeg",
     info: {
       tipo: "Revestimiento de pared o piso",
       Material: "Hormigón pigmentado",
@@ -391,7 +391,7 @@ const productos = [
   {
     id: "item 18",
     titulo: "Revestimiento",
-    imagen: "./src/assets/img/img-product/item 18.jpg",
+    imagen: "/img/img-product/item 18.jpg",
     info: {
       tipo: "Revestimiento de piso",
       Material: "Hormigón pigmentado",
@@ -413,7 +413,7 @@ const productos = [
   {
     id: "item 19",
     titulo: "Revestimiento",
-    imagen: "./src/assets/img/img-product/item 19.jpg",
+    imagen: "/img/img-product/item 19.jpg",
     info: {
       tipo: "Revestimiento de piso",
       Material: "Hormigón pigmentado",
@@ -435,7 +435,7 @@ const productos = [
   {
     id: "item 21",
     titulo: "Revestimiento",
-    imagen: "./src/assets/img/img-product/item 21.jpg",
+    imagen: "/img/img-product/item 21.jpg",
     info: {
       tipo: "Revestimiento de piso",
       Material: "Hormigón pigmentado",
@@ -456,7 +456,7 @@ const productos = [
   {
     id: "item 22",
     titulo: "Revestimiento",
-    imagen: "./src/assets/img/img-product/item 22.jpg",
+    imagen: "/img/img-product/item 22.jpg",
     info: {
       tipo: "Revestimiento de piso",
       Material: "Hormigón pigmentado",
@@ -477,7 +477,7 @@ const productos = [
   {
     id: "item 24",
     titulo: "Revestimiento",
-    imagen: "./src/assets/img/img-product/item 24.jpg",
+    imagen: "/img/img-product/item 24.jpg",
     info: {
       tipo: "Revestimiento de piso",
       Material: "Hormigón pigmentado",
@@ -498,7 +498,7 @@ const productos = [
   {
     id: "item 23",
     titulo: "Atermico",
-    imagen: "./src/assets/img/img-product/item 23.jpg",
+    imagen: "/img/img-product/item 23.jpg",
     info: {
       tipo: "Revestimiento de piso",
       Material: "Hormigón pigmentado",
@@ -519,7 +519,7 @@ const productos = [
   {
     id: "item 20",
     titulo: "Revestimiento",
-    imagen: "./src/assets/img/img-product/item 20.jpeg",
+    imagen: "/img/img-product/item 20.jpeg",
     info: {
       tipo: "Revestimiento de piso",
       Material: "Hormigón pigmentado",
@@ -541,7 +541,7 @@ const productos = [
   {
     id: "item 33",
     titulo: "Jardin",
-    imagen: "./src/assets/img/img-product/item 33.jpg",
+    imagen: "/img/img-product/item 33.jpg",
     info: {
       tipo: "Durmiente 50x25",
       Material: "Hormigon, simil madera",
@@ -562,7 +562,7 @@ const productos = [
   {
     id: "item 34",
     titulo: "Atermico",
-    imagen: "./src/assets/img/img-product/item 34.jpg",
+    imagen: "/img/img-product/item 34.jpg",
     info: {
       tipo: "Durmientes hormigon simil madera",
       Material: "Bicapa atérmico",
@@ -584,7 +584,7 @@ const productos = [
   {
     id: "item 35",
     titulo: "Atermico",
-    imagen: "./src/assets/img/img-product/item 35.jpg",
+    imagen: "/img/img-product/item 35.jpg",
     info: {
       tipo: "Durmientes simil madera",
       Material: "Bicapa atérmico",
@@ -605,7 +605,7 @@ const productos = [
   {
     id: "item 36",
     titulo: "Atermico",
-    imagen: "./src/assets/img/img-product/item 36.jpeg",
+    imagen: "/img/img-product/item 36.jpeg",
     info: {
       tipo: "Durmientes simil madera",
       Material: "Bicapa atérmico",
@@ -626,7 +626,7 @@ const productos = [
   {
     id: "item 37",
     titulo: "Atermico",
-    imagen: "./src/assets/img/img-product/item 37.jpeg",
+    imagen: "/img/img-product/item 37.jpeg",
     info: {
       tipo: "Quebracho 60x20",
       Material: "Bicapa atérmico",
@@ -647,7 +647,7 @@ const productos = [
   {
     id: "item 38",
     titulo: "Atermico",
-    imagen: "./src/assets/img/img-product/item 38.jpg",
+    imagen: "/img/img-product/item 38.jpg",
     info: {
       tipo: "Solarium Travertino",
       Material: "Bicapa atérmico",
@@ -669,7 +669,7 @@ const productos = [
   {
     id: "item 39",
     titulo: "Atermico",
-    imagen: "./src/assets/img/img-product/item 39.jpeg",
+    imagen: "/img/img-product/item 39.jpeg",
     info: {
       tipo: "Deck Travertino",
       Material: "Bicapa atérmico",
@@ -690,7 +690,7 @@ const productos = [
   {
     id: "item 40",
     titulo: "Atermico",
-    imagen: "./src/assets/img/img-product/item 40.jpeg",
+    imagen: "/img/img-product/item 40.jpeg",
     info: {
       tipo: "Esquinero Rejilla",
       Material: "Bicapa atérmico",
@@ -711,7 +711,7 @@ const productos = [
   {
     id: "item 41",
     titulo: "Atermico",
-    imagen: "./src/assets/img/img-product/item 41.jpeg",
+    imagen: "/img/img-product/item 41.jpeg",
     info: {
       tipo: "Pïnotea 1m",
       Material: "Bicapa atérmico",
@@ -733,7 +733,7 @@ const productos = [
   {
     id: "item 45",
     titulo: "Atermico",
-    imagen: "./src/assets/img/img-product/item 45.jpeg",
+    imagen: "/img/img-product/item 45.jpeg",
     info: {
       tipo: "Atermico",
       Material: "Hormigón pigmentado",
@@ -754,7 +754,7 @@ const productos = [
   {
     id: "item 46",
     titulo: "Atermico",
-    imagen: "./src/assets/img/img-product/item 46.jpeg",
+    imagen: "/img/img-product/item 46.jpeg",
     info: {
       tipo: "Atermico",
       Material: "Hormigón pigmentado",
@@ -775,7 +775,7 @@ const productos = [
   {
     id: "item 47",
     titulo: "Atermico",
-    imagen: "./src/assets/img/img-product/item 47.jpeg",
+    imagen: "/img/img-product/item 47.jpeg",
     info: {
       tipo: "Atermico",
       Material: "Hormigón pigmentado",
@@ -796,7 +796,7 @@ const productos = [
   {
     id: "item 48",
     titulo: "Atermico",
-    imagen: "./src/assets/img/img-product/item 48.jpeg",
+    imagen: "/img/img-product/item 48.jpeg",
     info: {
       tipo: "Revestimiento de piso",
       Material: "Atermico",
@@ -817,7 +817,7 @@ const productos = [
   {
     id: "item 49",
     titulo: "Atermico",
-    imagen: "./src/assets/img/img-product/item 49.jpeg",
+    imagen: "/img/img-product/item 49.jpeg",
     info: {
       tipo: "Atermico",
       Material: "Atermico",
@@ -838,7 +838,7 @@ const productos = [
   {
     id: "item 50",
     titulo: "Atermico",
-    imagen: "./src/assets/img/img-product/item 50.jpeg",
+    imagen: "/img/img-product/item 50.jpeg",
     info: {
       tipo: "Atermico",
       Material: "Atermico",
@@ -859,7 +859,7 @@ const productos = [
   {
     id: "item 51",
     titulo: "Atermico",
-    imagen: "./src/assets/img/img-product/item 51.jpeg",
+    imagen: "/img/img-product/item 51.jpeg",
     info: {
       tipo: "Atermico",
       Material: "Atermico",
@@ -880,7 +880,7 @@ const productos = [
   {
     id: "item 26",
     titulo: "Jardin",
-    imagen: "./src/assets/img/img-product/item 26.jpg",
+    imagen: "/img/img-product/item 26.jpg",
     info: {
       tipo: "Durmiente 50x25",
       Material: "Hormigón pigmentado",
@@ -901,7 +901,7 @@ const productos = [
   {
     id: "item 27",
     titulo: "Jardin",
-    imagen: "./src/assets/img/img-product/item 27.jpeg",
+    imagen: "/img/img-product/item 27.jpeg",
     info: {
       tipo: "Durmiente 100x25x7cm",
       Material: "Hormigón pigmentado",
@@ -922,7 +922,7 @@ const productos = [
   {
     id: "item 30",
     titulo: "Jardin",
-    imagen: "./src/assets/img/img-product/item 30.jpg",
+    imagen: "/img/img-product/item 30.jpg",
     info: {
       tipo: "Bloque césped Rombo",
       Material: "Hormigón pigmentado",
@@ -943,7 +943,7 @@ const productos = [
   {
     id: "item 31",
     titulo: "Jardin",
-    imagen: "./src/assets/img/img-product/item 31.jpg",
+    imagen: "/img/img-product/item 31.jpg",
     info: {
       tipo: "Bloque césped Redondo",
       Material: "Hormigón pigmentado",
@@ -965,7 +965,7 @@ const productos = [
   {
     id: "item 32",
     titulo: "Jardin",
-    imagen: "./src/assets/img/img-product/item 32.jpg",
+    imagen: "/img/img-product/item 32.jpg",
     info: {
       tipo: "Bloque césped Recto",
       Material: "Hormigón pigmentado",
@@ -986,7 +986,7 @@ const productos = [
   {
     id: "item 42",
     titulo: "Jardin",
-    imagen: "./src/assets/img/img-product/item 42.jpeg",
+    imagen: "/img/img-product/item 42.jpeg",
     info: {
       tipo: "Bloque cesped huella",
       Material: "Hormigón pigmentado",
