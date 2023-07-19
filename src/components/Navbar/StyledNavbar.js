@@ -1,7 +1,7 @@
 import styled from "styled-components";
 export const StyledNavbarContainer = styled.div`
   width: 100%;
-  height: 80px;
+  height: 120px;
   display: flex;
 
   z-index: 100;
@@ -44,6 +44,9 @@ export const StyledSocialContainer = styled.div`
   @media (max-width: 768px) {
     h1 {
       font-size: 1.5rem;
+    }
+    li {
+      display: none;
     }
   }
 `;

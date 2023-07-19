@@ -27,6 +27,11 @@ export const StyledCarritoInterfaz = styled.div`
   color: #fff;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  @media (max-width: 768px) {
+    width: 90%;
+    padding: 0rem;
+  }
 `;
 export const StyledCarritoClose = styled.div`
   width: 100%;
@@ -45,6 +50,15 @@ export const StyledCarritoProductosContainer = styled.div`
   gap: 1rem;
   padding: 1rem;
   color: #fff;
+  @media (max-width: 768px) {
+    width: 100%;
+
+    padding: 10px;
+    h2 {
+      font-weight: 700;
+      font-size: 1rem;
+    }
+  }
 `;
 export const StyledCarritoProductos = styled.div`
   width: 100%;
@@ -56,6 +70,10 @@ export const StyledCarritoProductos = styled.div`
   border-radius: 5px;
   gap: 1rem;
   color: #000;
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 100px;
+  }
 `;
 export const StyledCarritoImagen = styled.div`
   img {
@@ -65,6 +83,11 @@ export const StyledCarritoImagen = styled.div`
     &:hover {
       transform: scale(1.1);
       cursor: pointer;
+    }
+  }
+  @media (max-width: 768px) {
+    img {
+      display: none;
     }
   }
 `;

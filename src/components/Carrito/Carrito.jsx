@@ -66,7 +66,9 @@ const Carrito = () => {
                   <StyledCarritoImagen>
                     <img src={producto.imagen} alt="" />
                   </StyledCarritoImagen>
-                  <h2>{producto.categoria?.nombre}</h2>{" "}
+                  <h2 style={{ marginTop: "1rem" }}>
+                    {producto.categoria?.nombre}
+                  </h2>{" "}
                   {/* Agregar el operador de opcionalidad '?' */}
                   <StyledCarritoPrecioSubtotal>
                     <h3>Subtotal</h3>
