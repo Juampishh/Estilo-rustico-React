@@ -5,7 +5,7 @@ export const StyledContactContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: url("./src/assets/img/header.jpg") no-repeat;
+  background: url("/img/header.jpg") no-repeat;
   background-size: cover;
   background-position: center;
 `;

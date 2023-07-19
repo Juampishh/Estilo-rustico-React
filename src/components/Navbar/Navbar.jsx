@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import {
   StyledCartContainer,
-  StyledMenuContainer,
   StyledNavbarContainer,
   StyledSocialContainer,
 } from "./StyledNavbar";

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 export const StyledCarritoContainer = styled.div`
-  width: 20%;
+  width: 100px;
   height: 100%;
   display: flex;
   gap: 1rem;
