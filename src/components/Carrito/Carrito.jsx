@@ -4,6 +4,7 @@ import { BsFillTrashFill } from "react-icons/bs";
 import { useDispatch } from "react-redux";
 import { IoMdRemove } from "react-icons/io";
 import { IoMdAdd } from "react-icons/io";
+import { toast } from "react-toastify";
 
 import {
   StyledButtonComprar,
@@ -39,6 +40,11 @@ const Carrito = () => {
     return acc + producto.quantity * producto.precio;
   }, 0);
 
+  const handleClearCart = () => {
+    dispatch(clearCart());
+    toast.success("¡El carrito ha sido vaciado!");
+  };
+
   return (
     <>
       <StyledCarritoContainer>
@@ -50,7 +56,7 @@ const Carrito = () => {
           <StyledCarritoClose>
             <h2 style={{ fontSize: "2rem" }}>Productos</h2>
             <h3 style={{ fontSize: "2rem", padding: "12px" }}>
-              <BsFillTrashFill onClick={() => dispatch(clearCart())} />
+              <BsFillTrashFill onClick={handleClearCart} />
             </h3>
             <h3>
               <AiOutlineClose onClick={toggleCarrito} />

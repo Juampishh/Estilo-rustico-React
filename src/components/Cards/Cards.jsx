@@ -29,7 +29,7 @@ import { AiFillCreditCard } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaMoneyBillAlt } from "react-icons/fa";
 import productos from "../../assets/Data/data";
-import { GiBrickWall, GiPositionMarker } from "react-icons/gi";
+import { GiBrickWall } from "react-icons/gi";
 import { FaTemperatureHigh } from "react-icons/fa";
 import { BsFillTreeFill } from "react-icons/bs";
 import { AiFillShopping } from "react-icons/ai";
@@ -44,9 +44,9 @@ import { addToCart } from "../Redux/Cart/CartSlice";
 const Cards = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
   const [cartItems, setCartItems] = useState([]);
-
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
+  const dispatch = useDispatch();
 
   const handleCategoryClick = (category, card) => {
     setSelectedCategory(category);
@@ -61,27 +61,6 @@ const Cards = () => {
     setSelectedProduct(product);
   };
 
-  const handleAddToCart = (product) => {
-    const existingItem = cartItems.find((item) => item.id === product.id);
-
-    if (existingItem) {
-      setCartItems((prevCartItems) =>
-        prevCartItems.map((item) =>
-          item.id === product.id
-            ? { ...item, cantidad: item.cantidad + 1 }
-            : item
-        )
-      );
-    } else {
-      setCartItems((prevCartItems) => [
-        ...prevCartItems,
-        { ...product, cantidad: 1 },
-      ]);
-    }
-  };
-
-  console.log(cartItems);
-
   const filteredProductos = selectedCategory
     ? productos.filter((producto) => producto.categoria.id === selectedCategory)
     : productos;
@@ -89,8 +68,7 @@ const Cards = () => {
   const [productsPerPage, setProductsPerPage] = useState(8);
   const lastIndex = currentPage * productsPerPage;
   const firstIndex = lastIndex - productsPerPage;
-  const dispatch = useDispatch();
-  const notify = () => toast("Se añadio al carrito con exito");
+
   return (
     <>
       <StyledTargetHeroContainer>
@@ -136,7 +114,14 @@ const Cards = () => {
             </StyledTittleContainer>
 
             <StyledButtonContainer>
-              <StyledAddToCartButton onClick={() => dispatch(addToCart(card))}>
+              <StyledAddToCartButton
+                onClick={() => {
+                  dispatch(addToCart(card));
+                  toast.success("Producto añadido al carrito", {
+                    position: toast.POSITION.TOP_RIGHT,
+                  });
+                }}
+              >
                 Añadir al carrito
               </StyledAddToCartButton>
             </StyledButtonContainer>
@@ -193,10 +178,14 @@ const Cards = () => {
                   <AiFillBank cursor="pointer" fontSize="50px" />
                 </StyledMetodosDePagoContainer>
               </StyledProductDescriptionContainer>
-              <ToastContainer />
-              <StyledButtonContainer onClick={notify}>
+              <StyledButtonContainer>
                 <StyledAddToCartButton
-                  onClick={() => dispatch(addToCart(selectedProduct))}
+                  onClick={() => {
+                    dispatch(addToCart(selectedProduct));
+                    toast.success("Producto añadido al carrito", {
+                      position: toast.POSITION.TOP_RIGHT,
+                    });
+                  }}
                 >
                   Añadir al carrito
                 </StyledAddToCartButton>
@@ -219,6 +208,7 @@ const Cards = () => {
           ></AiOutlineClose>
         </StyledOverlay>
       )}
+      <ToastContainer />
     </>
   );
 };
