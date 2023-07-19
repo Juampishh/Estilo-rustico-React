@@ -28,7 +28,7 @@ const Hero = () => {
   return (
     <StyledHeroContainer>
       <StyledImageContainer>
-        <img src="./src/assets/img/header.jpg" alt="hero" />
+        <img src="/img/header.jpg" alt="hero" />
       </StyledImageContainer>
 
       <StyledHeroContentContainer>
