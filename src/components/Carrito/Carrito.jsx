@@ -42,7 +42,7 @@ const Carrito = () => {
 
   const handleClearCart = () => {
     dispatch(clearCart());
-    toast.success("¡El carrito ha sido vaciado!");
+    cartItems.length === 0 ? "" : toast.success("¡El carrito ha sido vaciado!");
   };
 
   return (
@@ -72,7 +72,7 @@ const Carrito = () => {
                   <StyledCarritoImagen>
                     <img src={producto.imagen} alt="" />
                   </StyledCarritoImagen>
-                  <h2 style={{ marginTop: "1rem" }}>
+                  <h2 style={{ marginTop: ".3rem" }}>
                     {producto.categoria?.nombre}
                   </h2>{" "}
                   {/* Agregar el operador de opcionalidad '?' */}

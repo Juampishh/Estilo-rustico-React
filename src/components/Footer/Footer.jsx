@@ -24,7 +24,7 @@ const Footer = () => {
       </StyledLinksFooter>
       <StyledLinksFooter>
         <h3>Politicas de Privacidad</h3>
-        <h3>Copyrigth</h3>
+
         <h3>Dev:Juan Pablo Merino</h3>
       </StyledLinksFooter>
     </StyledFooterContainer>

@@ -10,6 +10,8 @@ export const StyledFooterContainer = styled.div`
   align-items: center;
   padding: 2rem;
   border-top: 2px solid #000;
+  @media (max-width: 768px) {
+  }
 `;
 
 export const StyledLinksFooter = styled.div`
@@ -17,8 +19,12 @@ export const StyledLinksFooter = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
   gap: 0.7rem;
   h3 {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
     &:hover {
       transform: scale(1.1);
       cursor: pointer;

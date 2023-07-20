@@ -39,7 +39,7 @@ export const StyledHeroContentContainer = styled.div`
   top: 200px;
   @media (max-width: 768px) {
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
     }
   }
 `;

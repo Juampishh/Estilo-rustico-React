@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+
 import {
   StyledCartContainer,
   StyledNavbarContainer,
@@ -8,8 +9,6 @@ import {
 import Carrito from "../Carrito/Carrito";
 
 function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
     <>
       <StyledNavbarContainer>
