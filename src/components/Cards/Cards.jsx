@@ -203,7 +203,11 @@ const Cards = () => {
               position: "absolute",
               top: "20px",
               left: "20px",
-              color: "black",
+              color: "white",
+              border: "1px solid white",
+              borderRadius: "50%",
+              backgroundColor: "#141516",
+              padding: "3px",
             }}
           ></AiOutlineClose>
         </StyledOverlay>

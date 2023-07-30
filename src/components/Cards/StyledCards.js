@@ -10,6 +10,7 @@ export const StyledCardsContainer = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+  padding-bottom: 50px;
 `;
 
 export const StyledCards = styled.div`

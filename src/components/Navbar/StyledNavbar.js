@@ -1,9 +1,9 @@
 import styled from "styled-components";
 export const StyledNavbarContainer = styled.div`
   width: 100%;
-  height: 120px;
+  height: 100px;
   display: flex;
-
+  position: fixed;
   z-index: 100;
 
   gap: 20px;

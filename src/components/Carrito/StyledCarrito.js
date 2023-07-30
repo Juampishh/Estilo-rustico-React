@@ -16,11 +16,14 @@ export const StyledCarritoContainer = styled.div`
 export const StyledCarritoInterfaz = styled.div`
   width: 40%;
   padding: 1rem;
-  height: auto;
+  height: calc(100vh - 100px);
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  position: absolute;
+  position: fixed;
+  overflow-y: scroll;
+  justify-content: space-between;
+  right: 0;
   z-index: 100;
   top: 100px;
   background-color: #000;
@@ -44,7 +47,7 @@ export const StyledCarritoClose = styled.div`
 `;
 export const StyledCarritoProductosContainer = styled.div`
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   gap: 1rem;
