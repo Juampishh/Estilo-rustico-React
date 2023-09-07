@@ -72,7 +72,13 @@ const Carrito = () => {
                   <StyledCarritoImagen>
                     <img src={producto.imagen} alt="" />
                   </StyledCarritoImagen>
-                  <h2 style={{ marginTop: ".3rem" }}>
+                  <h2
+                    style={{
+                      marginTop: ".3rem",
+                      fontSize: "15px",
+                      textAlign: "center",
+                    }}
+                  >
                     {producto.categoria?.nombre}
                   </h2>{" "}
                   {/* Agregar el operador de opcionalidad '?' */}

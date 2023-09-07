@@ -145,7 +145,7 @@ export const StyledProductImage = styled.img`
   margin-bottom: 10px;
   @media (max-width: 768px) {
     width: 100%;
-    height: 90%;
+    height: 320px;
     margin-top: 20px;
   }
 `;
@@ -218,6 +218,9 @@ export const StyledProductDescription = styled.p`
   font-size: 26px;
   @media (max-width: 768px) {
     font-size: 20px;
+  }
+  @media (max-width: 375px) {
+    font-size: 13px;
   }
 `;
 

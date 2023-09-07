@@ -39,7 +39,12 @@ export const StyledHeroContentContainer = styled.div`
   top: 200px;
   @media (max-width: 768px) {
     h1 {
-      font-size: 2.8rem;
+      font-size: 1.8rem;
+    }
+  }
+  @media (max-width: 375px) {
+    h1 {
+      font-size: 1.5rem;
     }
   }
 `;
@@ -103,6 +108,9 @@ export const StyledCardListContainer = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
   }
+  @media (max-width: 375px) {
+    gap: 1.2rem;
+  }
 `;
 export const StyledCard = styled.div`
   width: 15%;
@@ -126,6 +134,9 @@ export const StyledCard = styled.div`
   }
   @media (max-width: 768px) {
     width: 50%;
+  }
+  @media (max-width: 375px) {
+    height: 50px;
   }
 `;
 export const StyledCardList = styled.div`

@@ -32,7 +32,8 @@ export const StyledCarritoInterfaz = styled.div`
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(5px);
   @media (max-width: 768px) {
-    width: 90%;
+    width: 100%;
+    border-radius: 0px;
     padding: 0rem;
   }
 `;
