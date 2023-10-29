@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-
+import { AiFillHome } from "react-icons/ai";
+import { MdContactPhone } from "react-icons/md";
+import { FaUser } from "react-icons/fa";
+import { BsFillInfoSquareFill } from "react-icons/bs";
 import {
   StyledCartContainer,
   StyledNavbarContainer,
@@ -15,13 +18,17 @@ function Navbar() {
         <StyledSocialContainer>
           <h1>Estilo Rustico</h1>
           <li>
-            <NavLink to="/about">Contacto</NavLink>
+            <AiFillHome /> <NavLink to="/">Inicio</NavLink>
           </li>
           <li>
-            <NavLink to="/">Sobre Nosotros</NavLink>
+            <MdContactPhone /> <NavLink to="/about"> Contacto</NavLink>
           </li>
           <li>
-            <NavLink to="/">Inicio</NavLink>
+            <BsFillInfoSquareFill /> <NavLink to="/">Sobre Nosotros</NavLink>
+          </li>
+
+          <li>
+            <FaUser /> <NavLink to="/login">Iniciar sesion</NavLink>
           </li>
         </StyledSocialContainer>
         <StyledCartContainer>

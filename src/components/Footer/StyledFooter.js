@@ -12,6 +12,8 @@ export const StyledFooterContainer = styled.div`
   border-top: 2px solid #000;
   @media (max-width: 768px) {
   }
+  position: relative;
+  z-index: 2;
 `;
 
 export const StyledLinksFooter = styled.div`

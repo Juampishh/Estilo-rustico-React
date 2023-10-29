@@ -12,7 +12,7 @@ export const StyledNavbarContainer = styled.div`
   background-color: #000;
   h1 {
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   li {
     list-style: none;
@@ -28,8 +28,11 @@ export const StyledSocialContainer = styled.div`
   gap: 3rem;
 
   li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     list-style: none;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     letter-spacing: 2px;
     &:hover {
       transform: scale(1.1);
