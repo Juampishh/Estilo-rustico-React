@@ -5,6 +5,7 @@ import Footer from "../../components/Footer/Footer";
 
 import { StyledLoginBox, StyledLoginContainer } from "./StyledLogin";
 import { NavLink } from "react-router-dom";
+
 const Login = () => {
   return (
     <StyledHomeContainer>
@@ -12,6 +13,7 @@ const Login = () => {
       <StyledLoginContainer>
         <img src="./public/img/header.jpg" alt="" />
         <h1>Iniciar Sesion</h1>
+
         <StyledLoginBox>
           <label htmlFor="email">Email</label>
           <input type="email" id="email" />

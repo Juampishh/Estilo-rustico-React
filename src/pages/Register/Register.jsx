@@ -2,29 +2,37 @@ import React from "react";
 import { StyledHomeContainer } from "../Home/StyledHome";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
+import { Formik } from "formik";
+import { StyledLoginContainer, SubmitButton } from "../Login/StyledLogin";
 
-import { StyledLoginBox, StyledLoginContainer } from "../Login/StyledLogin";
-import { NavLink } from "react-router-dom";
+import { Form } from "../Login/StyledLogin";
+import { registerInitialValues } from "../../formik/initialValues";
+import { registerValidationSchema } from "../../formik/validationSchema";
+import LoginInput from "../../components/LoginInput/LoginInput";
 const Register = () => {
   return (
     <StyledHomeContainer>
       <Navbar />
       <StyledLoginContainer>
         <img src="./public/img/header.jpg" alt="" />
-        <h1>Iniciar Sesion</h1>
-        <StyledLoginBox style={{ height: "500px" }}>
-          <label htmlFor="name">Nombre</label>
-          <input type="email" id="name" />
-          <label htmlFor="email">Email</label>
-          <input type="email" id="email" />
-          <label htmlFor="password">Contraseña</label>
-          <input type="password" id="password" />
-          <button type="submit">Registrarse</button>
-          <h2 style={{ fontSize: "18px" }}>
-            ¿Tienes una cuenta?{" "}
-            <NavLink to="/login">Inicia sesion aqui</NavLink>
-          </h2>
-        </StyledLoginBox>
+
+        <Formik
+          initialValues={registerInitialValues}
+          validationSchema={registerValidationSchema}
+          onSubmit={(values) => console.log(values)}
+        >
+          <Form>
+            <h2>Crea tu cuenta</h2>
+            <LoginInput name="name" type="text" placeholder="Nombre" />
+            <LoginInput name="email" type="text" placeholder="Email" />
+            <LoginInput
+              name="password"
+              type="password"
+              placeholder="Contraseña"
+            />
+            <SubmitButton type="button">Registrate</SubmitButton>
+          </Form>
+        </Formik>
       </StyledLoginContainer>
       <Footer />
     </StyledHomeContainer>
