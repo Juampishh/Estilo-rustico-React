@@ -34,9 +34,7 @@ function Navbar() {
 
           <li>
             <FaUser />{" "}
-            <NavLink
-              onClick={() => (currentUser ? "Esta online" : navigate("/login"))}
-            >
+            <NavLink to="/login">
               {currentUser ? `${currentUser.nombre}` : "Iniciar Sesion"}
             </NavLink>
           </li>

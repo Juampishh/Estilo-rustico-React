@@ -27,13 +27,15 @@ const Login = () => {
           validationSchema={loginValidationSchema}
           onSubmit={async (values, actions) => {
             const user = await loginUser(values.email, values.password);
+
             if (user) {
               dispatch(
                 setCurrentUser({
-                  ...user.usuario,
+                  ...user.user,
                   token: user.token,
                 })
               );
+              console.log(user);
               actions.resetForm();
             }
           }}
