@@ -13,9 +13,11 @@ import Carrito from "../Carrito/Carrito";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import ModalUser from "../ModalUser/ModalUser";
+import { setCurrentUser, toggleMenu } from "../Redux/User/userSlice";
 function Navbar() {
   const navigate = useNavigate();
-  const currentUser = useSelector((state) => state.user.currentUser);
+  const currentUser = useSelector((state) => state.user);
   const dispatch = useDispatch();
   return (
     <>
@@ -33,12 +35,20 @@ function Navbar() {
           </li>
 
           <li>
-            <FaUser />{" "}
-            <NavLink to="/login">
-              {currentUser ? `${currentUser.nombre}` : "Iniciar Sesion"}
-            </NavLink>
+            <FaUser />
+
+            <p
+              onClick={() =>
+                currentUser ? dispatch(toggleMenu()) : navigate("/login")
+              }
+            >
+              {currentUser
+                ? `${currentUser.currentUser.nombre}`
+                : "Iniciar Sesion"}
+            </p>
           </li>
         </StyledSocialContainer>
+        <ModalUser />
         <StyledCartContainer>
           <Carrito />
         </StyledCartContainer>
