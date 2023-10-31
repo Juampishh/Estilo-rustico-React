@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledModalContainer = styled.div`
-  width: 40%;
+  width: 30%;
   height: 50vh;
   background-color: rgba(0, 0, 0, 0.5);
   border-bottom-right-radius: 10px;

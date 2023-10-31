@@ -19,6 +19,7 @@ function Navbar() {
   const navigate = useNavigate();
   const currentUser = useSelector((state) => state.user);
   const dispatch = useDispatch();
+  console.log(currentUser);
   return (
     <>
       <StyledNavbarContainer>
@@ -39,14 +40,18 @@ function Navbar() {
 
             <p
               onClick={() =>
-                currentUser ? dispatch(toggleMenu()) : navigate("/login")
+                currentUser.currentUser
+                  ? dispatch(toggleMenu())
+                  : navigate("/login")
               }
             >
-              {currentUser ? `${currentUser.nombre}` : "Iniciar Sesion"}
+              {currentUser.currentUser
+                ? currentUser.currentUser.nombre
+                : "Iniciar Sesion"}
             </p>
           </li>
         </StyledSocialContainer>
-
+        {currentUser.currentUser && <ModalUser />}
         <StyledCartContainer>
           <Carrito />
         </StyledCartContainer>
