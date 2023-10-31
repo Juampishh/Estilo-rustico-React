@@ -42,13 +42,11 @@ function Navbar() {
                 currentUser ? dispatch(toggleMenu()) : navigate("/login")
               }
             >
-              {currentUser
-                ? `${currentUser.currentUser.nombre}`
-                : "Iniciar Sesion"}
+              {currentUser ? `${currentUser.nombre}` : "Iniciar Sesion"}
             </p>
           </li>
         </StyledSocialContainer>
-        <ModalUser />
+
         <StyledCartContainer>
           <Carrito />
         </StyledCartContainer>
