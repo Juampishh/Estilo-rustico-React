@@ -10,8 +10,13 @@ import {
   StyledSocialContainer,
 } from "./StyledNavbar";
 import Carrito from "../Carrito/Carrito";
-
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 function Navbar() {
+  const navigate = useNavigate();
+  const currentUser = useSelector((state) => state.user.currentUser);
+  const dispatch = useDispatch();
   return (
     <>
       <StyledNavbarContainer>
@@ -28,7 +33,12 @@ function Navbar() {
           </li>
 
           <li>
-            <FaUser /> <NavLink to="/login">Iniciar sesion</NavLink>
+            <FaUser />{" "}
+            <NavLink
+              onClick={() => (currentUser ? "Esta online" : navigate("/login"))}
+            >
+              {currentUser ? `${currentUser.nombre}` : "Iniciar Sesion"}
+            </NavLink>
           </li>
         </StyledSocialContainer>
         <StyledCartContainer>

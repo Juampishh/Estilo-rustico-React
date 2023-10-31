@@ -3,13 +3,17 @@ import { StyledHomeContainer } from "../Home/StyledHome";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import { Formik } from "formik";
-import { StyledLoginContainer, SubmitButton } from "../Login/StyledLogin";
+import { StyledLoginContainer } from "../Login/StyledLogin";
 
-import { Form } from "../Login/StyledLogin";
+import { Form } from "./RegisterStyles";
 import { registerInitialValues } from "../../formik/initialValues";
 import { registerValidationSchema } from "../../formik/validationSchema";
 import LoginInput from "../../components/LoginInput/LoginInput";
+import { Button } from "./RegisterStyles";
+import { createUser } from "../../axios/axiosUser";
+import { NavLink, useNavigate } from "react-router-dom";
 const Register = () => {
+  const navigate = useNavigate();
   return (
     <StyledHomeContainer>
       <Navbar />
@@ -19,10 +23,20 @@ const Register = () => {
         <Formik
           initialValues={registerInitialValues}
           validationSchema={registerValidationSchema}
-          onSubmit={(values) => console.log(values)}
+          onSubmit={async (values, actions) => {
+            const user = await createUser(
+              values.name,
+              values.email,
+              values.password
+            );
+            actions.resetForm();
+            if (user) {
+              navigate("/login");
+            }
+          }}
         >
           <Form>
-            <h2>Crea tu cuenta</h2>
+            <h1>Crea tu cuenta</h1>
             <LoginInput name="name" type="text" placeholder="Nombre" />
             <LoginInput name="email" type="text" placeholder="Email" />
             <LoginInput
@@ -30,7 +44,10 @@ const Register = () => {
               type="password"
               placeholder="Contraseña"
             />
-            <SubmitButton type="button">Registrate</SubmitButton>
+            <Button type="submit">Registrarse</Button>
+            <p>
+              ¿Ya tienes cuenta? <NavLink to="/login">Iniciar sesion</NavLink>
+            </p>
           </Form>
         </Formik>
       </StyledLoginContainer>

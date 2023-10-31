@@ -64,35 +64,3 @@ export const StyledLoginBox = styled.form`
     transform: scale(1.05);
   }
 `;
-export const Form = styled.form`
-  width: 80%;
-  border: 1px solid #ccc;
-  position: absolute;
-  z-index: 2;
-  height: 400px;
-  background-color: #fff;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  h2 {
-    margin-bottom: 20px;
-    font-size: 30px;
-  }
-`;
-export const SubmitButton = styled.button`
-  width: 80%;
-  height: 40px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  margin-bottom: 20px;
-  padding: 0 10px;
-  background-color: #000;
-  color: #fff;
-  font-size: 20px;
-  &:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-  }
-`;
