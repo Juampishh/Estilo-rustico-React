@@ -19,7 +19,7 @@ export const Form = styled(FormikForm)`
   position: relative;
   z-index: 2;
   border-radius: 10px;
-  width: 70%;
+  width: 50%;
 
   flex-direction: column;
   align-items: center;
