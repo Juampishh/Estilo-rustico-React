@@ -18,7 +18,7 @@ const Register = () => {
     <StyledHomeContainer>
       <Navbar />
       <StyledLoginContainer>
-        <img src="./public/img/header.jpg" alt="" />
+        <img src="/img/header.jpg" alt="" />
 
         <Formik
           initialValues={registerInitialValues}
