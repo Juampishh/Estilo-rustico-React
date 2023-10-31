@@ -35,7 +35,7 @@ const Login = () => {
                   token: user.token,
                 })
               );
-              console.log(user);
+
               actions.resetForm();
             }
           }}
