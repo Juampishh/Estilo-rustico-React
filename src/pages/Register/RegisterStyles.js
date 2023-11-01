@@ -14,7 +14,7 @@ export const LoginContainerStyled = styled.div`
 
 export const Form = styled(FormikForm)`
   display: flex;
-  height: 50%;
+  height: 80%;
   background-color: #fff;
   position: relative;
   z-index: 2;

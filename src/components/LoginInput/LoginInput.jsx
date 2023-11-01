@@ -14,7 +14,9 @@ const LoginInput = ({ name, type, placeholder }) => {
             isError={errors[field.name] && touched[field.name]}
           />
           <ErrorMessage name={field.name}>
-            {(msg) => <p style={{ fontSize: "10px" }}>{msg}</p>}
+            {(msg) => (
+              <p style={{ fontSize: "10px", textAlign: "center" }}>{msg}</p>
+            )}
           </ErrorMessage>
         </InputContainer>
       )}
