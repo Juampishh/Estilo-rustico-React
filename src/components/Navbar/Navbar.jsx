@@ -19,25 +19,27 @@ function Navbar() {
   const navigate = useNavigate();
   const currentUser = useSelector((state) => state.user);
   const dispatch = useDispatch();
-  console.log(currentUser);
+
   return (
     <>
       <StyledNavbarContainer>
         <StyledSocialContainer>
-          <h1>Estilo Rustico</h1>
+          <h1>
+            <NavLink style={{ color: "white" }} to="/">
+              Estilo Rustico
+            </NavLink>
+          </h1>
           <li>
-            <AiFillHome /> <NavLink to="/">Inicio</NavLink>
+            <NavLink to="/">Inicio</NavLink>
           </li>
           <li>
-            <MdContactPhone /> <NavLink to="/about"> Contacto</NavLink>
+            <NavLink to="/about"> Contacto</NavLink>
           </li>
           <li>
-            <BsFillInfoSquareFill /> <NavLink to="/">Sobre Nosotros</NavLink>
+            <NavLink to="/">Sobre Nosotros</NavLink>
           </li>
 
           <li>
-            <FaUser />
-
             <p
               onClick={() =>
                 currentUser.currentUser
@@ -53,6 +55,21 @@ function Navbar() {
         </StyledSocialContainer>
         {currentUser.currentUser && <ModalUser />}
         <StyledCartContainer>
+          <figure
+            onClick={() =>
+              currentUser.currentUser
+                ? dispatch(toggleMenu())
+                : navigate("/login")
+            }
+          >
+            <FaUser />
+            <p style={{ fontSize: "15px" }}>
+              {currentUser.currentUser
+                ? currentUser.currentUser.nombre
+                : "User"}
+            </p>
+          </figure>
+
           <Carrito />
         </StyledCartContainer>
       </StyledNavbarContainer>

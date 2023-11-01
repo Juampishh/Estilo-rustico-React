@@ -21,7 +21,7 @@ export const StyledNavbarContainer = styled.div`
   }
 `;
 export const StyledSocialContainer = styled.div`
-  width: 50%;
+  width: 100%;
   padding: 0 20px;
   display: flex;
 
@@ -56,6 +56,22 @@ export const StyledSocialContainer = styled.div`
 
 export const StyledCartContainer = styled.div`
   display: flex;
-  width: 50%;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
   justify-content: flex-end;
+  figure {
+    color: #fff;
+    font-size: 1.5rem;
+    display: none;
+  }
+  @media (max-width: 768px) {
+    justify-content: space-around;
+    figure {
+      margin-top: 10px;
+      font-size: 1.7rem;
+      display: block;
+      cursor: pointer;
+    }
+  }
 `;

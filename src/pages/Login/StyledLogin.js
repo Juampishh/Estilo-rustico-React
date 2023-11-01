@@ -2,7 +2,7 @@ import styled from "styled-components";
 export const StyledLoginContainer = styled.div`
   width: 100%;
   height: 100vh;
-
+  padding: 100px 0;
   background-color: #f5f5f5;
   display: flex;
 
@@ -13,12 +13,10 @@ export const StyledLoginContainer = styled.div`
     font-size: 40px;
   }
   img {
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    background-position: center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    object-fit: cover;
+
     position: absolute;
     z-index: 0;
   }

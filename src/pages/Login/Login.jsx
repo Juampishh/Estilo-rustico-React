@@ -41,7 +41,7 @@ const Login = () => {
           }}
         >
           <Form>
-            <h1>Iniciar Sesion</h1>
+            <h1 style={{ marginBottom: "10px" }}>Iniciar Sesion</h1>
 
             <LoginInput name="email" type="text" placeholder="Email" />
             <LoginInput

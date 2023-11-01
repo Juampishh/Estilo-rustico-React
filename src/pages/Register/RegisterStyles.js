@@ -26,6 +26,19 @@ export const Form = styled(FormikForm)`
   justify-content: center;
   padding: 0 2rem;
   gap: 20px;
+  @media (max-width: 768px) {
+    width: 90%;
+    margin-top: 40px;
+    height: 90%;
+    button {
+      width: 100%;
+    }
+    button:hover {
+      transform: scale(1.1);
+
+      cursor: pointer;
+    }
+  }
 `;
 
 export const LoginEmailStyled = styled(Link)`

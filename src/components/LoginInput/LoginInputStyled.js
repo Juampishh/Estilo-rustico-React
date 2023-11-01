@@ -24,4 +24,7 @@ export const LoginInputStyled = styled.input`
   height: 100%;
   border: none;
   outline: none;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
