@@ -27,4 +27,10 @@ export const StyledModalContainer = styled.div`
   p:hover {
     transform: scale(1.1);
   }
+  @media (max-width: 768px) {
+    margin-top: 100px;
+    width: 50%;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
 `;
