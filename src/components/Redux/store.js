@@ -4,9 +4,11 @@ import { persistReducer } from "redux-persist";
 import { persistStore } from "redux-persist";
 import cartReducer from "./Cart/CartSlice";
 import userReducer from "./User/userSlice";
+import orderReducer from "./orders/orderSlice";
 const reducers = combineReducers({
   cart: cartReducer,
   user: userReducer,
+  order: orderReducer,
 });
 
 const persistConfig = {

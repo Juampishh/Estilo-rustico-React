@@ -1,9 +1,38 @@
 import React from "react";
 import productos from "../../assets/Data/data";
 
-const Pagination = ({ productsPerPage, currentPage, setCurrentPage }) => {
+const Pagination = ({
+  productsPerPage,
+  currentPage,
+  setCurrentPage,
+  category,
+}) => {
   const pageNumber = Math.ceil(productos.length / productsPerPage);
+  const pageNumberJardin = Math.ceil(
+    productos.filter((producto) => producto.categoria.id === "Jardin").length /
+      8
+  );
 
+  const pageNumberAtermicos = Math.ceil(
+    productos.filter((producto) => producto.categoria.id === "Atermicos")
+      .length / 8
+  );
+  const pageNumberRevestimientos = Math.ceil(
+    productos.filter((producto) => producto.categoria.id === "Revestimientos")
+      .length / 8
+  );
+
+  const handlePageNumber = (category) => {
+    if (category === "Jardin") {
+      return pageNumberJardin;
+    } else if (category === "Atermicos") {
+      return pageNumberAtermicos;
+    } else if (category === "Revestimientos") {
+      return pageNumberRevestimientos;
+    } else {
+      return Math.ceil(productos.length / 8);
+    }
+  };
   const onPreviusPage = () => {
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
@@ -36,27 +65,28 @@ const Pagination = ({ productsPerPage, currentPage, setCurrentPage }) => {
       </a>
       <a
         className={`pagination-next ${
-          currentPage === pageNumber ? "is-disabled" : ""
+          currentPage === handlePageNumber(category) ? "is-disabled" : ""
         }`}
         onClick={onNextPage}
       >
         Siguiente
       </a>
       <ul className="pagination-list">
-        {Array.from({ length: pageNumber }, (_, index) => index + 1).map(
-          (number) => (
-            <li key={number}>
-              <a
-                onClick={() => onSpecificPage(number)}
-                className={`pagination-link ${
-                  number === currentPage ? "is-current" : ""
-                }`}
-              >
-                {number}
-              </a>
-            </li>
-          )
-        )}
+        {Array.from(
+          { length: handlePageNumber(category) },
+          (_, index) => index + 1
+        ).map((number) => (
+          <li key={number}>
+            <a
+              onClick={() => onSpecificPage(number)}
+              className={`pagination-link ${
+                number === currentPage ? "is-current" : ""
+              }`}
+            >
+              {number}
+            </a>
+          </li>
+        ))}
       </ul>
     </nav>
   );

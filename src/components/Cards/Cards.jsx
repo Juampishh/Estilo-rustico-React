@@ -43,16 +43,19 @@ import { addToCart } from "../Redux/Cart/CartSlice";
 
 const Cards = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
-  const [cartItems, setCartItems] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
   const dispatch = useDispatch();
+  const [animationClass, setAnimationClass] = useState("");
 
   const handleCategoryClick = (category, card) => {
+    setAnimationClass("fadeIn");
     setSelectedCategory(category);
     setCurrentPage(1);
   };
-
+  const handleAnimationEnd = () => {
+    setAnimationClass("");
+  };
   const handleProductClose = () => {
     setSelectedProduct(null);
   };
@@ -96,7 +99,11 @@ const Cards = () => {
       </StyledTargetHeroContainer>
       <StyledCardsContainer>
         {filteredProductos.slice(firstIndex, lastIndex).map((card, index) => (
-          <StyledCards className="zoomIn" key={index}>
+          <StyledCards
+            className={`${animationClass}`}
+            onAnimationEnd={handleAnimationEnd}
+            key={index}
+          >
             <StyledImageCard>
               <img
                 src={card.imagen}
@@ -132,6 +139,7 @@ const Cards = () => {
         productsPerPage={productsPerPage}
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}
+        category={selectedCategory}
       />
       {selectedProduct && (
         <StyledOverlay>
