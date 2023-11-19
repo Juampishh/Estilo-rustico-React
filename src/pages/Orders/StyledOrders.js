@@ -9,10 +9,11 @@ export const StyledOrdersContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: #000;
+  background-image: url("../public/img/fondo-orders.jfif");
 `;
 export const StyledTitleContainer = styled.div`
-  width: 100%;
+  border-bottom: 1px solid #fff;
+
   text-align: center;
   h1 {
     font-size: 2rem;
@@ -40,9 +41,13 @@ export const StyledCardOrder = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   img {
     width: 100%;
     height: 70%;
     object-fit: cover;
+  }
+  p {
+    font-size: 1.2rem;
   }
 `;

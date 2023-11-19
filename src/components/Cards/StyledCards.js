@@ -127,7 +127,18 @@ export const StyledProductDetails = styled.div`
   width: 70%;
   height: 80%;
   text-align: center;
+  @media only screen and (min-width: 800px) and (max-width: 1200px) {
+    width: 80%;
+    height: 80%;
+    flex-direction: column;
+  }
   @media (max-width: 768px) {
+    padding: 0 20px;
+    width: 95%;
+    height: 95%;
+    flex-direction: column;
+  }
+  @media (max-width: 375px) {
     padding: 0 20px;
     width: 95%;
     height: 95%;
@@ -137,6 +148,10 @@ export const StyledProductDetails = styled.div`
 export const StyledProductImageContainer = styled.div`
   width: 100%;
   height: 100%;
+  @media only screen and (min-width: 800px) and (max-width: 1200px) {
+    width: 100%;
+    height: 40%;
+  }
 `;
 export const StyledProductImage = styled.img`
   width: 100%;
@@ -149,22 +164,35 @@ export const StyledProductImage = styled.img`
     height: 320px;
     margin-top: 20px;
   }
+  @media (max-width: 375px) {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+  }
 `;
 export const StyledProductInfoContainer = styled.div`
   width: 100%;
   height: 70%;
   margin-left: 20px;
   text-align: left;
+  @media (max-width: 768px) {
+    margin-left: 10px;
+  }
 `;
 
 export const StyledProductTitle = styled.h1`
   padding: 20px;
   font-weight: bold;
-  font-size: 44px;
+  text-decoration: underline;
+  font-size: 36px;
   @media (max-width: 768px) {
     font-size: 24px;
     padding: 0;
     margin-bottom: 20px;
+  }
+  @media only screen and (min-width: 800px) and (max-width: 1200px) {
+    font-size: 24px;
+    margin-bottom: 0px;
   }
 `;
 export const StyledProductPriceContainer = styled.div`
@@ -180,6 +208,11 @@ export const StyledProductPriceContainer = styled.div`
   }
   @media (max-width: 768px) {
     display: none;
+  }
+  @media only screen and (min-width: 800px) and (max-width: 1200px) {
+    h2 {
+      display: none;
+    }
   }
 `;
 export const StyledProductPrice = styled.p`
@@ -216,12 +249,22 @@ export const StyledProductDescriptionContainer = styled.div`
 `;
 export const StyledProductDescription = styled.p`
   display: flex;
-  font-size: 26px;
+  font-size: 23px;
+  font-weight: bold;
+
+  &:before {
+    content: "•";
+    margin-right: 10px;
+  }
   @media (max-width: 768px) {
     font-size: 20px;
   }
   @media (max-width: 375px) {
-    font-size: 13px;
+    font-size: 16px;
+  }
+  @media only screen and (min-width: 800px) and (max-width: 1200px) {
+    font-size: 16px;
+    margin: 0;
   }
 `;
 
@@ -234,8 +277,11 @@ export const StyledAddToCartButton = styled.button`
 
   cursor: pointer;
   @media (max-width: 768px) {
-    position: absolute;
-    bottom: 0;
+    bottom: 0px;
+    left: 0;
+  }
+  @media only screen and (min-width: 800px) and (max-width: 1200px) {
+    bottom: 0px;
     left: 0;
   }
 `;
@@ -257,6 +303,9 @@ export const StyledMetodosDePagoContainer = styled.div`
     font-weight: bold;
   }
   @media (max-width: 768px) {
+    display: none;
+  }
+  @media only screen and (min-width: 800px) and (max-width: 1200px) {
     display: none;
   }
 `;

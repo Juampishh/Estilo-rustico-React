@@ -34,12 +34,17 @@ import { FaTemperatureHigh } from "react-icons/fa";
 import { BsFillTreeFill } from "react-icons/bs";
 import { AiFillShopping } from "react-icons/ai";
 import { TiThSmallOutline } from "react-icons/ti";
+import { IoIosCalculator } from "react-icons/io";
 import {
   StyledTargetHero,
   StyledTargetHeroContainer,
 } from "../Hero/StyledHero";
 import Pagination from "../Pagination/Pagination";
 import { addToCart } from "../Redux/Cart/CartSlice";
+import CalculatorModal from "../CalculatorModal/CalculatorModal";
+import { toggleModal } from "../Redux/Calculator/calculatorSlice";
+import { selectModalHidden } from "../Redux/Calculator/calculatorSlice";
+import { useSelector } from "react-redux";
 
 const Cards = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
@@ -48,11 +53,17 @@ const Cards = () => {
   const dispatch = useDispatch();
   const [animationClass, setAnimationClass] = useState("");
 
+  const isModalHidden = useSelector(selectModalHidden);
+
+  const handleToggleModal = () => {
+    dispatch(toggleModal());
+  };
   const handleCategoryClick = (category, card) => {
     setAnimationClass("fadeIn");
     setSelectedCategory(category);
     setCurrentPage(1);
   };
+
   const handleAnimationEnd = () => {
     setAnimationClass("");
   };
@@ -165,11 +176,23 @@ const Cards = () => {
                 <StyledProductDescription>
                   Cantidad: {selectedProduct.info.Cantidad}
                 </StyledProductDescription>
+
                 <StyledProductDescription>
                   Precio: {selectedProduct.info.Precio}
                 </StyledProductDescription>
                 <StyledProductDescription>
                   Medida: {selectedProduct.info.Medida}
+                </StyledProductDescription>
+                <StyledProductDescription>
+                  <p
+                    style={{
+                      cursor: "pointer",
+                      color: "blue",
+                    }}
+                    onClick={handleToggleModal}
+                  >
+                    Calcular cantidad de material
+                  </p>
                 </StyledProductDescription>
                 <StyledProductPriceContainer>
                   <h2>
@@ -188,6 +211,7 @@ const Cards = () => {
               </StyledProductDescriptionContainer>
               <StyledButtonContainer>
                 <StyledAddToCartButton
+                  style={{ position: "absolute" }}
                   onClick={() => {
                     dispatch(addToCart(selectedProduct));
                     toast.success("Producto añadido al carrito", {
@@ -218,6 +242,9 @@ const Cards = () => {
               padding: "3px",
             }}
           ></AiOutlineClose>
+          {isModalHidden && (
+            <CalculatorModal selectedProduct={selectedProduct} />
+          )}
         </StyledOverlay>
       )}
       <ToastContainer />
