@@ -211,7 +211,6 @@ const Cards = () => {
               </StyledProductDescriptionContainer>
               <StyledButtonContainer>
                 <StyledAddToCartButton
-                  style={{ position: "absolute" }}
                   onClick={() => {
                     dispatch(addToCart(selectedProduct));
                     toast.success("Producto añadido al carrito", {
