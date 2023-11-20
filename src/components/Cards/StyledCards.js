@@ -158,7 +158,7 @@ export const StyledProductImage = styled.img`
   }
 `;
 export const StyledProductInfoContainer = styled.div`
-  width: 100%;
+  width: 90%;
   height: 70%;
   margin-left: 20px;
   text-align: left;
@@ -224,7 +224,7 @@ export const StyledProductDiscount = styled.p`
 export const StyledProductDescriptionContainer = styled.div`
   width: 100%;
   padding: 20px;
-  gap: 15px;
+  gap: 7px;
   display: flex;
   flex-direction: column;
 
@@ -237,7 +237,6 @@ export const StyledProductDescriptionContainer = styled.div`
 export const StyledProductDescription = styled.p`
   display: flex;
   font-size: 23px;
-  font-weight: bold;
 
   &:before {
     content: "•";
