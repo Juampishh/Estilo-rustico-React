@@ -8,8 +8,8 @@ import {
   StyledImageContainer,
   StyledInformationExtra,
 } from "./StyledHero";
-import { MdLocationPin } from "react-icons/md";
-import { AiFillCreditCard } from "react-icons/ai";
+import { IoLocationSharp } from "react-icons/io5";
+import { FaCreditCard } from "react-icons/fa";
 import { FaTruckMoving } from "react-icons/fa";
 import { GiShop } from "react-icons/gi";
 import Carrito from "../Carrito/Carrito";
@@ -38,7 +38,7 @@ const Hero = () => {
       <StyledCardListContainer>
         <StyledCard onClick={() => handleClick(1)}>
           <StyledCardList>
-            <AiFillCreditCard />
+            <FaCreditCard />
             <h2>Tarjetas</h2>
           </StyledCardList>
 
@@ -77,7 +77,7 @@ const Hero = () => {
 
         <StyledCard onClick={() => handleClick(4)}>
           <StyledCardList>
-            <MdLocationPin />
+            <IoLocationSharp />
             <h2>Corrientes</h2>
           </StyledCardList>
 
