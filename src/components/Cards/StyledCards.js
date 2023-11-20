@@ -77,21 +77,8 @@ export const StyledTittleContainer = styled.div`
 export const StyledButtonContainer = styled.div`
   width: 100%;
   padding: 25px;
-  button {
-    width: 100%;
-    height: 50px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    font-size: 1.2rem;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-    &:hover {
-      background-color: #000;
-      color: #fff;
-      transition: 0.5s;
-      transform: scale(0.9);
-    }
-  }
+  display: flex;
+  justify-content: center;
 `;
 
 export const StyledTitleCategoriesContainer = styled.div`
@@ -273,9 +260,12 @@ export const StyledAddToCartButton = styled.button`
   color: white;
   border: none;
   padding: 10px 20px;
+  font-size: 20px;
   border-radius: 5px;
-
+  width: 100%;
+  height: 50px;
   cursor: pointer;
+
   @media (max-width: 768px) {
     bottom: 0px;
     left: 0;
@@ -283,6 +273,9 @@ export const StyledAddToCartButton = styled.button`
   @media only screen and (min-width: 800px) and (max-width: 1200px) {
     bottom: 0px;
     left: 0;
+  }
+  @media (min-width: 1205px) {
+    width: 50%;
   }
 `;
 export const StyledAddToCartButtonContainer = styled.div`

@@ -37,7 +37,9 @@ const CalculatorModal = ({ selectedProduct }) => {
     }
 
     const unidadesPorMetroCuadrado = selectedProduct.unidades;
-    const totalMateriales = metrosCuadrados * unidadesPorMetroCuadrado;
+    const totalMateriales = Math.round(
+      metrosCuadrados * unidadesPorMetroCuadrado
+    );
     setCantidadMateriales(totalMateriales);
   };
 
@@ -47,15 +49,19 @@ const CalculatorModal = ({ selectedProduct }) => {
         <StyledCalculatorModalTitle>
           Calculadora de materiales
         </StyledCalculatorModalTitle>
+
         <StyledCalculatorModalDescription>
-          <p>Nombre del material: {selectedProduct.categoria.nombre}</p>
-          <p>Cantidad : {selectedProduct.info.Cantidad}</p>
-          <p>La venta se realiza por m²</p>
+          <p>
+            Nombre del material: <span>{selectedProduct.categoria.nombre}</span>{" "}
+          </p>
+          <p>
+            Cantidad : <span>{selectedProduct.info.Cantidad}</span>{" "}
+          </p>
+          <span>La venta se realiza por m²</span>
         </StyledCalculatorModalDescription>
         <StyledCalculatorModalForm>
-          <label htmlFor="inputmetros">
-            Ingrese la cantidad de m² que desee cubrir
-          </label>
+          <p>Ingrese la cantidad de m² que desee cubrir</p>
+
           <input
             id="inputmetros"
             type="number"
@@ -67,18 +73,50 @@ const CalculatorModal = ({ selectedProduct }) => {
           </StyledCalculatorModalButton>
         </StyledCalculatorModalForm>
         {cantidadMateriales !== null && (
-          <p>Cantidad de unidades necesarias: {cantidadMateriales}</p>
+          <p
+            style={{
+              textAlign: "center",
+              fontWeight: "bold",
+              margin: "2px",
+              border: "1px solid black",
+              borderRadius: "5px",
+            }}
+          >
+            Cantidad de unidades necesarias: {cantidadMateriales}
+          </p>
         )}
-        <p>
+        <p
+          style={{
+            textAlign: "center",
+            fontWeight: "bold",
+            margin: "2px",
+            border: "1px solid black",
+            borderRadius: "5px",
+          }}
+        >
           Precio estimado: $
-          {(cantidadMateriales / selectedProduct.unidades) *
-            selectedProduct.precio *
-            0.75}{" "}
+          {Math.round(
+            (cantidadMateriales / selectedProduct.unidades) *
+              selectedProduct.precio *
+              0.75
+          )}{" "}
           con un descuento del 25%
         </p>
-        <p style={{ fontSize: "15px" }}>
+        <p
+          style={{
+            fontSize: "15px",
+            textAlign: "center",
+            fontWeight: "bold",
+            margin: "2px",
+            border: "1px solid black",
+            borderRadius: "5px",
+          }}
+        >
           Para realizar la compra del material debera añadir{" "}
-          {cantidadMateriales / selectedProduct.unidades} unidades al carrito
+          <span>
+            {Math.round(cantidadMateriales / selectedProduct.unidades)}
+          </span>{" "}
+          unidades al carrito
         </p>
         <StyledCalculatorModalCloseButton>
           <IoCloseCircleOutline onClick={handleToggleModal} fontSize={"45px"} />

@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 export const StyledCalculatorModalContainer = styled.div`
   display: flex;
+  gap: 10px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #cac0a3;
+  background-color: #ddcbbe;
   position: absolute;
   border: 1px solid #000;
   box-shadow: 0 0 10px #000;
@@ -111,5 +112,12 @@ export const StyledCalculatorModalDescription = styled.div`
     text-align: center;
     margin: 0;
     margin-bottom: 10px;
+  }
+  span {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
   }
 `;
