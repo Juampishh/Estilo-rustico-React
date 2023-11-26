@@ -27,7 +27,7 @@ const Perfil = () => {
               <p>{user.currentUser.email}</p>
             </StyledPerfilInformationContainer>
             <StyledPerfilImageContainer>
-              <img src="./public/img/logo.jpg" alt=""></img>
+              <img src="./img/logo.jpg" alt=""></img>
             </StyledPerfilImageContainer>
           </StyledPerfilCard>
         </StyledPerfilContainer>
