@@ -14,8 +14,10 @@ import { loginValidationSchema } from "../../formik/validationSchema";
 import { loginUser } from "../../axios/axiosUser";
 import { useDispatch } from "react-redux";
 import { setCurrentUser } from "../../components/Redux/User/userSlice";
+import { useNavigate } from "react-router-dom";
 const Login = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   return (
     <StyledHomeContainer>
       <Navbar />
@@ -35,7 +37,7 @@ const Login = () => {
                   token: user.token,
                 })
               );
-
+              navigate("/");
               actions.resetForm();
             }
           }}

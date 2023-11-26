@@ -228,19 +228,19 @@ const Cards = () => {
 
           <AiOutlineClose
             className="zoomIn"
-            fontSize="60px"
+            fontSize="40px"
             color="white"
             cursor="pointer"
             onClick={handleProductClose}
             style={{
               position: "absolute",
               top: "20px",
-              left: "20px",
+              right: "20px",
               color: "white",
               border: "1px solid white",
               borderRadius: "50%",
               backgroundColor: "#141516",
-              padding: "3px",
+              padding: "10px",
             }}
           ></AiOutlineClose>
           {isModalHidden && (

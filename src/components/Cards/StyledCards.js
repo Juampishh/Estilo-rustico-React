@@ -148,12 +148,12 @@ export const StyledProductImage = styled.img`
   margin-bottom: 10px;
   @media (max-width: 768px) {
     width: 100%;
-    height: 320px;
+    height: 420px;
     margin-top: 20px;
   }
   @media (max-width: 375px) {
     width: 100%;
-    height: 200px;
+    height: 250px;
     margin-top: 20px;
   }
 `;
@@ -171,14 +171,14 @@ export const StyledProductTitle = styled.h1`
   padding: 20px;
   font-weight: bold;
   text-decoration: underline;
-  font-size: 36px;
+  font-size: 30px;
   @media (max-width: 768px) {
-    font-size: 24px;
+    font-size: 20px;
     padding: 0;
     margin-bottom: 20px;
   }
   @media only screen and (min-width: 800px) and (max-width: 1200px) {
-    font-size: 24px;
+    font-size: 34px;
     margin-bottom: 0px;
   }
 `;
@@ -243,13 +243,13 @@ export const StyledProductDescription = styled.p`
     margin-right: 10px;
   }
   @media (max-width: 768px) {
-    font-size: 20px;
+    font-size: 17px;
   }
   @media (max-width: 375px) {
     font-size: 16px;
   }
   @media only screen and (min-width: 800px) and (max-width: 1200px) {
-    font-size: 16px;
+    font-size: 30px;
     margin: 0;
   }
 `;
@@ -274,7 +274,13 @@ export const StyledAddToCartButton = styled.button`
     left: 0;
   }
   @media (min-width: 1205px) {
-    width: 50%;
+    width: 30%;
+  }
+  &:hover {
+    background-color: gray;
+    transform: scale(0.9);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    color: black;
   }
 `;
 export const StyledAddToCartButtonContainer = styled.div`
