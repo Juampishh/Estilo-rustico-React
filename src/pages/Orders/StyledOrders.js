@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledOrdersContainer = styled.div`
   width: 100%;
   height: 100%;
+  margin-top: 80px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -12,6 +13,9 @@ export const StyledOrdersContainer = styled.div`
   background-image: url("img/fondo-orders.jpg");
   object-fit: cover;
   background-size: cover;
+  @media (max-width: 768px) {
+    height: 100%;
+  }
 `;
 export const StyledTitleContainer = styled.div`
   width: 30%;
@@ -27,6 +31,11 @@ export const StyledTitleContainer = styled.div`
     color: #fff;
     font-weight: 700;
   }
+  @media (max-width: 768px) {
+    width: 70%;
+
+    left: 15%;
+  }
 `;
 
 export const StyledCardOrderContainer = styled.div`
@@ -35,6 +44,7 @@ export const StyledCardOrderContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  overflow-y: scroll;
 `;
 
 export const StyledCardOrder = styled.div`

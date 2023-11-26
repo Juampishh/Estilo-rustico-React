@@ -22,15 +22,32 @@ const ModalUser = () => {
     <>
       {currentUser.hiddenMenu && (
         <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={fadeInVariants}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          style={{
+            position: "fixed",
+            top: "0",
+            right: "0",
+            bottom: "0",
+            width: "100%",
+            height: "100%",
+            backgroundColor: "rgba(0,0,0,0.5)",
+            zIndex: "999",
+          }}
         >
           <StyledModalContainer>
             <hr />
             <h1>Bienvenido {currentUser.currentUser.nombre}</h1>
             <hr />
-            <p>Perfil</p>
+            <p
+              onClick={() => {
+                navigate("/perfil");
+                dispatch(toggleMenu());
+              }}
+            >
+              Perfil
+            </p>
             <p
               onClick={() => {
                 navigate("/orders");
@@ -56,7 +73,7 @@ const ModalUser = () => {
               style={{
                 position: "absolute",
                 top: "20px",
-                left: "20px",
+                right: "20px",
                 color: "white",
                 border: "1px solid white",
                 borderRadius: "50%",

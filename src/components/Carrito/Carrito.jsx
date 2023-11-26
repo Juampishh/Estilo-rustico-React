@@ -25,6 +25,7 @@ import { AiOutlineShoppingCart, AiOutlineClose } from "react-icons/ai";
 import { clearCart } from "../Redux/Cart/CartSlice";
 import { addToCart } from "../Redux/Cart/CartSlice";
 import { removeFromCart } from "../Redux/Cart/CartSlice";
+import { useNavigate } from "react-router-dom";
 
 const Carrito = () => {
   const [carritoVisible, setCarritoVisible] = useState(false);
@@ -46,6 +47,7 @@ const Carrito = () => {
     cartItems.length === 0 ? "" : toast.success("¡El carrito ha sido vaciado!");
   };
 
+  const navigate = useNavigate();
   return (
     <>
       <StyledCarritoContainer>
@@ -138,7 +140,14 @@ const Carrito = () => {
               <span>${totalGeneral}</span>
             </StyledCarritoPrecioTotal>
             <StyledButtonComprar>
-              <button>Comprar</button>
+              <button
+                onClick={() => {
+                  navigate("/checkout");
+                  toggleCarrito();
+                }}
+              >
+                Comprar
+              </button>
             </StyledButtonComprar>
           </StyledCarritoInterfaz>
         </motion.div>

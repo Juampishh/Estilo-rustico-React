@@ -7,13 +7,13 @@ const INITIAL_STATE = {
 };
 
 const orderSlice = createSlice({
-  name: "order",
+  name: "orders",
   initialState: INITIAL_STATE,
   reducers: {
     createOrderFail: (state = INITIAL_STATE, action) => {
       return {
         ...state,
-        loading: false,
+
         error: action.payload,
       };
     },
@@ -21,6 +21,7 @@ const orderSlice = createSlice({
       return {
         ...state,
         loading: false,
+        error: null,
         orders: [...action.payload],
       };
     },

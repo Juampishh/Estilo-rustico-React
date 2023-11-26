@@ -108,6 +108,7 @@ const Cards = () => {
           <p>Ofertas</p>
         </StyledTargetHero>
       </StyledTargetHeroContainer>
+
       <StyledCardsContainer>
         {filteredProductos.slice(firstIndex, lastIndex).map((card, index) => (
           <StyledCards
@@ -179,7 +180,7 @@ const Cards = () => {
                 </StyledProductDescription>
 
                 <StyledProductDescription>
-                  Precio: {selectedProduct.info.Precio}
+                  Venta {selectedProduct.info.Precio}
                 </StyledProductDescription>
                 <StyledProductDescription>
                   Medida: {selectedProduct.info.Medida}

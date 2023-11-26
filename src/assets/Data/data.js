@@ -1,3 +1,6 @@
+let min = 10000;
+let max = 32000;
+
 const productos = [
   {
     id: "item 1",
@@ -23,7 +26,7 @@ const productos = [
       nombre: "Mayken",
       id: "Revestimientos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "11.5",
   },
   {
@@ -45,7 +48,7 @@ const productos = [
       nombre: "Quebracho y Corteza (Pared)",
       id: "Revestimientos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "15",
   },
   {
@@ -67,7 +70,7 @@ const productos = [
       nombre: "Quebracho y Corteza (Piso)",
       id: "Revestimientos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "15",
   },
   {
@@ -89,7 +92,7 @@ const productos = [
       nombre: "Murete San Juan (MSJ)",
       id: "Revestimientos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "9",
   },
   {
@@ -110,7 +113,7 @@ const productos = [
       nombre: "Simil Piedra (SP)",
       id: "Revestimientos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "36",
   },
   {
@@ -131,7 +134,7 @@ const productos = [
       nombre: "Roca",
       id: "Revestimientos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "12.5",
   },
   {
@@ -152,7 +155,7 @@ const productos = [
       nombre: "Murete San Luis (MSL)",
       id: "Revestimientos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "40",
   },
   {
@@ -174,7 +177,7 @@ const productos = [
       nombre: "Traverlite",
       id: "Revestimientos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "36",
   },
   {
@@ -195,7 +198,7 @@ const productos = [
       nombre: "Adoquin colonial",
       id: "Revestimientos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "100",
   },
   {
@@ -216,7 +219,7 @@ const productos = [
       nombre: "Piedra Umha",
       id: "Revestimientos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "0",
   },
   {
@@ -237,7 +240,7 @@ const productos = [
       nombre: "Prisma",
       id: "Revestimientos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "36",
   },
   {
@@ -258,7 +261,7 @@ const productos = [
       nombre: "Quarzita",
       id: "Revestimientos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "14",
   },
   {
@@ -279,7 +282,7 @@ const productos = [
       nombre: "Patagonia",
       id: "Revestimientos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "17",
   },
   {
@@ -300,7 +303,7 @@ const productos = [
       nombre: "Multikubik",
       id: "Revestimientos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "48",
   },
   {
@@ -321,7 +324,7 @@ const productos = [
       nombre: "GeoKubik",
       id: "Revestimientos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "33",
   },
   {
@@ -342,7 +345,7 @@ const productos = [
       nombre: "Piedra Irregular",
       id: "Revestimientos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "8",
   },
   {
@@ -364,7 +367,7 @@ const productos = [
       nombre: "Quebracho cruzado",
       id: "Revestimientos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "6.25",
   },
   {
@@ -385,7 +388,7 @@ const productos = [
       nombre: "BlockWood 3D",
       id: "Revestimientos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "144",
   },
   {
@@ -406,7 +409,7 @@ const productos = [
       nombre: "Quebracho 60",
       id: "Revestimientos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "8.33",
   },
 
@@ -428,7 +431,7 @@ const productos = [
       nombre: "Quebracho de 60 + adoquin madera",
       id: "Revestimientos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "6.22",
   },
 
@@ -450,7 +453,7 @@ const productos = [
       nombre: "Pinotea 1mt",
       id: "Revestimientos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "7.41",
   },
   {
@@ -471,7 +474,7 @@ const productos = [
       nombre: "Lapacho",
       id: "Revestimientos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "7.41",
   },
   {
@@ -492,7 +495,7 @@ const productos = [
       nombre: "Laja",
       id: "Revestimientos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "4",
   },
   {
@@ -513,7 +516,7 @@ const productos = [
       nombre: "Deck antideslizante L",
       id: "Atermicos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "4",
   },
   {
@@ -534,7 +537,7 @@ const productos = [
       nombre: "Deck Hormigon",
       id: "Revestimientos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "4",
   },
 
@@ -556,7 +559,7 @@ const productos = [
       nombre: "Durmiente 50x25 Atermico",
       id: "Atermicos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "50",
   },
   {
@@ -577,7 +580,7 @@ const productos = [
       nombre: "Durmiente 50x30 Hormigon",
       id: "Atermicos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "8",
   },
 
@@ -599,7 +602,7 @@ const productos = [
       nombre: "Durmiente 50x30 Atermico",
       id: "Atermicos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "6.7",
   },
   {
@@ -620,7 +623,7 @@ const productos = [
       nombre: "Durmiente 1 metro Atermico",
       id: "Atermicos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "3.4",
   },
   {
@@ -641,7 +644,7 @@ const productos = [
       nombre: "Quebracho 60x20",
       id: "Atermicos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "3.4",
   },
   {
@@ -662,7 +665,7 @@ const productos = [
       nombre: "Solarium Travertino",
       id: "Atermicos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "4",
   },
 
@@ -684,7 +687,7 @@ const productos = [
       nombre: "Deck Travertino",
       id: "Atermicos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "4",
   },
   {
@@ -705,7 +708,7 @@ const productos = [
       nombre: "Esquinero rejilla",
       id: "Atermicos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "16",
   },
   {
@@ -726,7 +729,7 @@ const productos = [
       nombre: "Pinotea 1 metro",
       id: "Atermicos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "8.33",
   },
 
@@ -748,7 +751,7 @@ const productos = [
       nombre: "Borde ballena 50x50",
       id: "Atermicos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "144",
   },
   {
@@ -769,7 +772,7 @@ const productos = [
       nombre: "Borde ballenita 50x40",
       id: "Atermicos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "144",
   },
   {
@@ -790,7 +793,7 @@ const productos = [
       nombre: "Borde ballena 50x40",
       id: "Atermicos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "144",
   },
   {
@@ -811,7 +814,7 @@ const productos = [
       nombre: "Deck antideslizante ",
       id: "Atermicos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "4",
   },
   {
@@ -832,7 +835,7 @@ const productos = [
       nombre: "Borde ballena 50x50 L",
       id: "Atermicos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "2",
   },
   {
@@ -853,7 +856,7 @@ const productos = [
       nombre: "Borde L",
       id: "Atermicos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "2",
   },
   {
@@ -874,7 +877,7 @@ const productos = [
       nombre: "Borde Recto",
       id: "Atermicos",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "2",
   },
   {
@@ -895,7 +898,7 @@ const productos = [
       nombre: "Durmiente lapacho o pinotea",
       id: "Jardin",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "8",
   },
   {
@@ -916,7 +919,7 @@ const productos = [
       nombre: "Durmientes 1mt",
       id: "Jardin",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "3.4",
   },
   {
@@ -937,7 +940,7 @@ const productos = [
       nombre: "Bloque césped Rombo",
       id: "Jardin",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "8.2",
   },
   {
@@ -958,7 +961,7 @@ const productos = [
       nombre: "Bloque césped Redondo",
       id: "Jardin",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "8.2",
   },
 
@@ -980,7 +983,7 @@ const productos = [
       nombre: "Bloque césped Recto",
       id: "Jardin",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "8.2",
   },
   {
@@ -1001,7 +1004,7 @@ const productos = [
       nombre: "Bloque cesped huella",
       id: "Jardin",
     },
-    precio: 1000,
+    precio: Math.floor(Math.random() * (max - min + 1)) + min,
     unidades: "6.3",
   },
 ];

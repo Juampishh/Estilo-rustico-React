@@ -4,6 +4,9 @@ import About from "./pages/About/About";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import Orders from "./pages/Orders/Orders";
+import Checkout from "./pages/Checkout/Checkout";
+import Perfil from "./pages/Perfil/Perfil";
+import SobreNos from "./pages/SobreNos/SobreNos";
 
 function App() {
   return (
@@ -14,6 +17,10 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/orders" element={<Orders />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/sobrenosotros" element={<SobreNos />} />
+        <Route path="/perfil" element={<Perfil />} />
+        <Route path="*" element={<h1>Not found</h1>} />
       </Routes>
     </BrowserRouter>
   );

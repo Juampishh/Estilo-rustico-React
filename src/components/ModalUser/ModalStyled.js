@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledModalContainer = styled.div`
   width: 30%;
   height: 50vh;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   border-bottom-right-radius: 10px;
   position: fixed;
   top: 0;
