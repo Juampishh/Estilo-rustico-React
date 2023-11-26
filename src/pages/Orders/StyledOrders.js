@@ -9,7 +9,7 @@ export const StyledOrdersContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-image: url("../public/img/fondo-orders.jpg");
+  background-image: url("img/fondo-orders.jpg");
   object-fit: cover;
   background-size: cover;
 `;
