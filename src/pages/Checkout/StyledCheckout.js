@@ -13,6 +13,7 @@ export const StyledCheckoutContainer = styled.div`
   background-size: cover;
   @media (max-width: 768px) {
     height: 100%;
+    flex-direction: column;
   }
 `;
 
@@ -32,7 +33,7 @@ export const StyledTitleContainer = styled.div`
   }
   @media (max-width: 768px) {
     width: 70%;
-
+    display: none;
     left: 15%;
   }
 `;
@@ -43,6 +44,10 @@ export const StyledFormContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 export const StyledForm = styled.form`
@@ -55,6 +60,7 @@ export const StyledForm = styled.form`
   border-radius: 10px;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
   input {
     background-color: rgba(210, 210, 180, 0.8);
     width: 30%;
@@ -67,7 +73,7 @@ export const StyledForm = styled.form`
     outline: none;
 
     @media (max-width: 768px) {
-      width: 90%;
+      width: 100%;
     }
     &:hover {
       transform: scale(1.02);
