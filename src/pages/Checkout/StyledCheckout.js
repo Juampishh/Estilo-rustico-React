@@ -61,6 +61,7 @@ export const StyledForm = styled.form`
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+
   input {
     background-color: rgba(210, 210, 180, 0.8);
     width: 30%;
@@ -96,6 +97,9 @@ export const StyledForm = styled.form`
     @media (max-width: 768px) {
       width: 90%;
     }
+  }
+  input {
+    width: 90%;
   }
 `;
 export const StyledCardOrderContainer = styled.div`

@@ -35,6 +35,9 @@ export const StyledSobreNosInformationContainer = styled.div`
     top: 110px;
     margin-bottom: 2rem;
   }
+  @media only screen and (min-width: 800px) and (max-width: 1700px) {
+    flex-direction: column;
+  }
   @media screen and (max-width: 768px) {
     overflow-y: scroll;
     flex-direction: column;

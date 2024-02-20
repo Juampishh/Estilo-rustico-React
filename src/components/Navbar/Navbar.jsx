@@ -35,9 +35,6 @@ function Navbar() {
           <li>
             <NavLink to="/about"> Contacto</NavLink>
           </li>
-          <li>
-            <NavLink to="/sobrenosotros">Sobre Nosotros</NavLink>
-          </li>
 
           <li>
             <p

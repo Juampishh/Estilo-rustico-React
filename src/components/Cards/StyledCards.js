@@ -119,6 +119,9 @@ export const StyledProductDetails = styled.div`
     height: 80%;
     flex-direction: column;
   }
+  @media only screen and (min-width: 1200px) and (max-width: 1409px) {
+    width: 95%;
+  }
   @media (max-width: 768px) {
     padding: 0 20px;
     width: 95%;
