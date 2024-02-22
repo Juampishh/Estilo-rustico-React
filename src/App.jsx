@@ -18,7 +18,6 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/orders" element={<Orders />} />
         <Route path="/checkout" element={<Checkout />} />
-
         <Route path="/perfil" element={<Perfil />} />
         <Route path="*" element={<h1>Not found</h1>} />
       </Routes>
